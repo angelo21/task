@@ -9,6 +9,31 @@
   </head>
 
   <body>
-      <h1>hello world</h1>
+    <div class="container">
+      <div id="main" class="card">
+        <div class="card__content">
+          <span class="card__title">Task List</span>
+          <form class="card__form js-card__form">
+            <div class="card__field">
+              <input type="text" name="task" id="task" class="js-task">
+              <label for="task">New Task</label>
+            </div>
+            <input type="submit" value="Add Task" class="btn">
+          </form>
+        </div>
+        <div class="card__action">
+          <h5 class="card__title">Tasks</h5>
+          <div class="card__field">
+            <input type="text" name="filter" id="filter" class="js-filter">
+            <label for="filter">Filter tasks</label>
+          </div>
+          <ul class="card__collection js-card__collection">
+            <a href="#" class="card__clear-tasks btn black js-card__clear-tasks">Clear Tasks</a>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <script src="scripts/script.js"></script>
   </body>
 </html>
