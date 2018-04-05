@@ -14,11 +14,14 @@ body {
   padding: 0;
   margin: 0;
   font-family: sans-serif;
+  color: $color-light;
 }
 
 .container {
-  max-width: 96rem;
+  max-width: 60rem;
   width: 90%;
-  margin: 0 auto;
-  outline: 1px solid red;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }

@@ -1,0 +1,113 @@
+
+.card {
+
+  &__content {
+    border: 1px solid gray;
+    padding: 2rem;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 200;
+  }
+
+  &__new-task {
+    opacity: 0;
+    transition: all .3s;
+    position: absolute;
+    font-size: 1.4rem;
+  }
+
+  &__field {
+    display: flex;
+    flex-direction: column-reverse;
+    position: relative;
+  }
+
+  &__input {
+    height: 3.5rem;
+    width: 50%;
+    color: inherit;
+    border: none;
+    border-bottom: 1px solid $color-light;
+
+    &:focus::placeholder {
+      color: transparent;
+    }
+
+    &:focus {
+      border-bottom: 2px solid rgb(49, 143, 49);
+    }
+  }
+
+  &__input:focus + &__new-task {
+    opacity: 1;
+    transform: translateY(-2rem);
+  }
+
+  &__action {
+    border: 1px solid gray;
+    border-top: none;
+    padding: 2rem;
+  }
+
+  &__title {
+    margin-top: 0;
+  }
+
+  &__add-btn {
+    padding: .5rem;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__clear-tasks {
+    display: inline-block;
+    text-decoration: none;
+    padding: 1rem;
+    font-size: 1.5rem;
+    font-weight: 200;
+  }
+
+  .btn {
+    width: 10rem;
+    background-color: rgb(49, 143, 49);
+    border-radius: 10rem;
+    color: white;
+    box-shadow: 2px 2px 3px $color-light;
+    margin-top: 2rem;
+    
+
+    &:active {
+      transform: translateX(.2rem) translateY(.2rem);
+      box-shadow: none;
+    }
+  }
+
+  &__collection {
+    list-style: none;
+    padding: 0;
+
+    &-item {
+      display: flex;
+      justify-content: space-between;
+      width: 30%;
+      padding: 1rem;
+      font-size: 1.6rem;
+    }
+  }
+
+  &__delete {
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(49, 143, 49);
+    transition: all .2s;
+
+    &:hover {
+      color: lighten(rgb(49, 143, 49), 20%);
+    }
+  }
+
+  
+}

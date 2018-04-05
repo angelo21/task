@@ -12,24 +12,24 @@
     <div class="container">
       <div id="main" class="card">
         <div class="card__content">
-          <span class="card__title">Task List</span>
+          <h5 class="card__title">Task List</h5>
           <form class="card__form js-card__form">
             <div class="card__field">
-              <input type="text" name="task" id="task" class="js-task">
-              <label for="task">New Task</label>
+              <input type="text" class="js-task card__input" placeholder="New Task">
+              <p class="card__new-task">New Task</p>
             </div>
-            <input type="submit" value="Add Task" class="btn">
+            <input type="submit" value="Add Task" class="card__add-btn btn">
           </form>
         </div>
         <div class="card__action">
           <h5 class="card__title">Tasks</h5>
           <div class="card__field">
-            <input type="text" name="filter" id="filter" class="js-filter">
-            <label for="filter">Filter tasks</label>
+            <input type="text" class="js-filter card__input"placeholder="Filter Tasks">
+            <p class="card__new-task">Filter Task</p>
           </div>
           <ul class="card__collection js-card__collection">
           </ul>
-          <a href="#" class="card__clear-tasks btn black js-card__clear-tasks">Clear Tasks</a>
+          <a href="#" class="card__clear-tasks  js-card__clear-tasks btn">Clear Tasks</a>
         </div>
       </div>
     </div>
