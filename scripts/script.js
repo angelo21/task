@@ -6,57 +6,6 @@ const clearBtn = document.querySelector(".js-card__clear-tasks");
 const filter = document.querySelector(".js-filter");
 const taskInput = document.querySelector(".js-task");
 
-
-// LOAD ALL EVENT LISTENERS
-// function loadEventListeners() {
-//   form.addEventListener("submit", (e) => {
-//     e.preventDefault();
-//     if (taskInput.value === "") {
-//       alert("Add a task");
-//     }
-
-//     //CREATE LI ELEMENT
-//     const li =  document.createElement("li");
-//                 li.className ="card__collection-item";
-//                 li.appendChild(document.createTextNode(taskInput.value));
-
-//     //CREATE LINK ELEMENT
-//     const a = document.createElement("a");
-//           a.setAttribute("href", "#");
-//           a.className = "card__delete";
-//           a.innerHTML = "<i class='card__delete-item'>X</i>";
-//           li.appendChild(a);
-
-//     //APPEND LI TO UL
-//     taskList.appendChild(li);
-
-//     //CLEAR THE INPUT
-//     taskInput.value = "";
-//   });
-// }
-// loadEventListeners();
-
-// //LOAD EVENT TO DELETE ITEMS
-// function deleteItems() {
-//   taskList.addEventListener("click", (e) => {
-//     if (e.target.className === "card__delete-item") {
-//       e.target.parentElement.parentElement.remove()
-//     }  
-//   })
-// }
-// deleteItems()
-
-//LOAD EVENT TO CLEAR ALL TASKS
-// function deleteAll() {
-//   clearBtn.addEventListener("click", (e) => {
-//     while(taskList.firstChild) {
-//       taskList.firstChild.remove();
-//     }
-//   })
-// }
-// deleteAll();
-
-
 const events = {
   //LOAD FORM EVENT LISTENERS
   formEvents() {
