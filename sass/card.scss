@@ -13,9 +13,10 @@
 
   &__new-task {
     opacity: 0;
-    transition: all .3s;
+    transition: all .4s;
     position: absolute;
-    font-size: 1.4rem;
+    color: $color-aqua;
+    margin-bottom: 2rem;
   }
 
   &__field {
@@ -36,13 +37,13 @@
     }
 
     &:focus {
-      border-bottom: 2px solid rgb(49, 143, 49);
+      border-bottom: 2px solid $color-aqua;
     }
   }
 
   &__input:focus + &__new-task {
     opacity: 1;
-    transform: translateY(-2rem);
+    transform: translateY(-2rem) translateX(1rem) scale(1.5);
   }
 
   &__action {
@@ -56,23 +57,24 @@
   }
 
   &__add-btn {
-    padding: .5rem;
+    padding: 1rem;
     border: none;
     outline: none;
     cursor: pointer;
+    background-color: $color-aqua;
   }
 
   &__clear-tasks {
     display: inline-block;
     text-decoration: none;
     padding: 1rem;
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     font-weight: 200;
+    background-color: black;
   }
 
   .btn {
     width: 10rem;
-    background-color: rgb(49, 143, 49);
     border-radius: 10rem;
     color: white;
     box-shadow: 2px 2px 3px $color-light;
@@ -92,20 +94,21 @@
     &-item {
       display: flex;
       justify-content: space-between;
-      width: 30%;
+      width: 50%;
       padding: 1rem;
       font-size: 1.6rem;
+      border: 1px solid $color-light;
     }
   }
 
   &__delete {
     text-decoration: none;
     font-weight: bold;
-    color: rgb(49, 143, 49);
+    color: $color-aqua;
     transition: all .2s;
 
     &:hover {
-      color: lighten(rgb(49, 143, 49), 20%);
+      color: lighten($color-aqua, 20%);
     }
   }
 

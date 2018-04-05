@@ -31,9 +31,10 @@ body {
 
 .card__new-task {
   opacity: 0;
-  transition: all .3s;
+  transition: all .4s;
   position: absolute;
-  font-size: 1.4rem; }
+  color: #2bbbad;
+  margin-bottom: 2rem; }
 
 .card__field {
   display: flex;
@@ -49,11 +50,11 @@ body {
   .card__input:focus::placeholder {
     color: transparent; }
   .card__input:focus {
-    border-bottom: 2px solid #318f31; }
+    border-bottom: 2px solid #2bbbad; }
 
 .card__input:focus + .card__new-task {
   opacity: 1;
-  transform: translateY(-2rem); }
+  transform: translateY(-2rem) translateX(1rem) scale(1.5); }
 
 .card__action {
   border: 1px solid gray;
@@ -64,21 +65,22 @@ body {
   margin-top: 0; }
 
 .card__add-btn {
-  padding: .5rem;
+  padding: 1rem;
   border: none;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  background-color: #2bbbad; }
 
 .card__clear-tasks {
   display: inline-block;
   text-decoration: none;
   padding: 1rem;
-  font-size: 1.5rem;
-  font-weight: 200; }
+  font-size: 1.4rem;
+  font-weight: 200;
+  background-color: black; }
 
 .card .btn {
   width: 10rem;
-  background-color: #318f31;
   border-radius: 10rem;
   color: white;
   box-shadow: 2px 2px 3px #545a61;
@@ -93,14 +95,15 @@ body {
   .card__collection-item {
     display: flex;
     justify-content: space-between;
-    width: 30%;
+    width: 50%;
     padding: 1rem;
-    font-size: 1.6rem; }
+    font-size: 1.6rem;
+    border: 1px solid #545a61; }
 
 .card__delete {
   text-decoration: none;
   font-weight: bold;
-  color: #318f31;
+  color: #2bbbad;
   transition: all .2s; }
   .card__delete:hover {
-    color: #5ec85e; }
+    color: #6eded3; }
