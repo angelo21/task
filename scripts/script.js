@@ -124,7 +124,7 @@ const events = {
       items.forEach((task) => {
         const item = task.textContent;
         if (item.toLowerCase().includes(text)) {
-          task.style.display = "block";
+          task.style.display = "flex";
         } else {
           task.style.display = "none";
         }
