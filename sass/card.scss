@@ -2,7 +2,6 @@
 .card {
 
   &__content {
-    border: 1px solid gray;
     padding: 2rem;
   }
 
@@ -47,8 +46,7 @@
   }
 
   &__action {
-    border: 1px solid gray;
-    border-top: none;
+    border-top: 1px solid lightgray;
     padding: 2rem;
   }
 
